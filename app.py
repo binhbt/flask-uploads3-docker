@@ -26,8 +26,8 @@ def upload():
     if "myfile" not in request.files:
         return "No myfile key in request.files"
     s3 = boto3.resource('s3',
-                        aws_access_key_id='AKIAIEO6XXJPAZOJJN7A',
-                        aws_secret_access_key='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')
+                        aws_access_key_id='AKIAIEO6XXJPAZOJJN7Avfđf',
+                        aws_secret_access_key='tH7CgUstY00UxOxAI5LnMefwsckQVDEWwkPUjBajfdffd')
 
     # s3.Bucket('onigazer-photos').put_object(Key='a_python_file.py',
     #                                         Body=request.files['myfile'])
