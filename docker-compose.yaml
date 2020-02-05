@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    restart: always
+    build: .
+    ports:
+      - "5500:5000"
+    environment: 
+      - SECRET_KEY=postgres
+      - S3_SECRET_ACCESS_KEY=kidssy-user
+      - S3_KEY
